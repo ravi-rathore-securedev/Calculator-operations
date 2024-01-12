@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+  
+}
+.header{
+    padding: 0;
+    
+    background-color:rgb(247, 245, 245);
+    font-size: 24px;
+    border-radius: 20%;
+   opacity: 0.9;
+   color: #0b035a;
+  
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://st.depositphotos.com/3244893/5148/v/950/depositphotos_51488307-stock-illustration-math-doodles.jpg') center/cover no-repeat fixed;
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 100%;
+    height: 60vh;
+    max-width: 330px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    border: 3px solid #080e10;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #e0e0e0;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 24px;
+}
+
+button {
+    background-color: #e0e0e0;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button:active {
+    background-color: #c0c0c0;
+}
+
+.operator {
+    background-color: #c0c0c0;
+    color: #444;
+}
+
+.operator:hover {
+    background-color: #b0b0b0;
+}
+
+.operator:active {
+    background-color: #a0a0a0;
+}
+
+.clear {
+    grid-column: span 1;
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.back {
+    grid-column: span 1;
+    background-color: #03bf4b;
+    color: #fff;
+}
+
+
+.clear:hover {
+    background-color: #ff0000;
+}
+
+.clear:active {
+    background-color: #cc0000;
+}
+
+.back:hover {
+    background-color: #16e867;
+}
+
+.back:active {
+    background-color: #16e867;
+}
+
+.calculate {
+    grid-column: span 3;
+    background-color: #16daca;
+    color: #444;
+}
+
+.calculate:hover {
+    background-color: #1d70b4;
+}
+
+.calculate:active {
+    background-color: #1d70b4;
+}
